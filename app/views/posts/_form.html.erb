@@ -1,0 +1,36 @@
+<%= form_for @post, :html => { :class => 'form-horizontal' } do |f| %>
+  <fieldset>
+    <legend><%= controller.action_name.capitalize %> Post!</legend>
+
+    <div class="control-group">
+      <%= f.label :title, :class => 'control-label' %>
+      <div class="controls">
+        <%= f.text_field :title, :class => 'text_field', size: 80 %>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <%= f.label :content, :class => 'control-label' %>
+      <div class="controls">
+        <%= f.text_area :content, id: 'content', cols: 80, rows: 25, :class => "text_area"%>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <%= f.label :post_date, :class => 'control-label' %>
+      <div class="controls">
+        <%= f.datetime_select :post_date, :class => 'datetime_select' %>
+      </div>
+    </div>
+    <div class="form-actions">
+      <%= f.submit nil, :class => 'btn btn-primary' %>
+      <%= link_to 'Cancel', posts_path, :class => 'btn' %>
+    </div>
+  </fieldset>
+<% end %>
+
+    <script>
+      var editor = CodeMirror.fromTextArea(document.getElementById("content"), {mode: "text/html", tabMode: "indent", lineWrapping: true, lineNumbers: true, fixedGutter: true
+      });
+    </script>
+

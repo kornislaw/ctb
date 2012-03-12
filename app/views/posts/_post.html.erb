@@ -1,0 +1,17 @@
+<div class="row-fluid">
+
+  <div class="span2">
+  </div>
+  <div class="span10">
+
+    <h2><%= link_to_unless_current h(post.title), post %></h2>
+
+    <p>
+      <em><%= post.post_date %></em>
+    </p>
+
+    <p>
+      <%= sanitize post.content %>
+    </p>
+  </div>
+</div>
