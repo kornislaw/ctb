@@ -56,7 +56,5 @@ module Blog
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
 
-    # [KORNISLAW] this is my try - heroku has problems with not precompiled files
-    config.assets.precompile += %w( *.js *.css )
   end
 end
