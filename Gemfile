@@ -3,8 +3,6 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.2'
 gem 'sqlite3'
 gem 'will_paginate', '~> 3.0'
-gem 'codemirror-rails'
-gem 'google-code-prettify-rails'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -13,6 +11,8 @@ group :assets do
   gem 'coffee-rails', '~> 3.2.1'
   gem 'uglifier', '>= 1.0.3'
   gem 'twitter-bootstrap-rails'
+  gem 'codemirror-rails'
+  gem 'google-code-prettify-rails'
 end
 
 gem 'jquery-rails'
@@ -28,4 +28,5 @@ end
 group :test do
   gem 'turn'
   gem 'minitest'
+  gem 'minitest-reporters', '>= 0.5.0'
 end
