@@ -1,4 +1,6 @@
-Blog::Application.routes.draw do
+  Blog::Application.routes.draw do
+  devise_for :users
+
   resources :posts do
     member do
       get 'sidebar_list'
