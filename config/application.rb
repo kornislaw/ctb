@@ -57,7 +57,7 @@ module Blog
     config.assets.version = '1.0'
 
     # Devise suggests that line when using Heroku:
-#    config.assets.initialize_on_precompile = false
+    config.assets.initialize_on_precompile = false
 
   end
 end
