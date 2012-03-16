@@ -1,6 +1,6 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
-initial-post:
+one:
   title: 'Construction time again'
   content: "Get out the crane, construction time again. What is it this time? We're laying a pipeline. Let the bids of sweat flow until the ends have met, though, could take a long time."
   post_date: 2012-03-08 15:00:00
