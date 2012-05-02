@@ -1,4 +1,6 @@
   Blog::Application.routes.draw do
+  resources :web_images
+
   resources :roles
 
   devise_for :users

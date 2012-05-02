@@ -1,0 +1,23 @@
+<h1>Listing web_images</h1>
+
+<table>
+  <tr>
+    <th>Icon</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @web_images.each do |web_image| %>
+  <tr>
+    <td><%= image_tag web_image.image.url(:thumb) %></td>
+    <td><%= link_to 'Show', web_image %></td>
+    <td><%= link_to 'Edit', edit_web_image_path(web_image) %></td>
+    <td><%= link_to 'Destroy', web_image, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Web image', new_web_image_path %>

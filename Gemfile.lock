@@ -33,6 +33,7 @@ GEM
     arel (3.0.2)
     bcrypt-ruby (3.0.1)
     builder (3.0.0)
+    cocaine (0.2.1)
     codemirror-rails (2.22)
       railties (~> 3.0)
     coffee-rails (3.2.2)
@@ -74,6 +75,12 @@ GEM
     minitest (2.11.3)
     multi_json (1.1.0)
     orm_adapter (0.0.6)
+    paperclip (3.0.2)
+      activemodel (>= 3.0.0)
+      activerecord (>= 3.0.0)
+      activesupport (>= 3.0.0)
+      cocaine (>= 0.0.2)
+      mime-types
     pg (0.13.2)
     polyglot (0.3.3)
     rack (1.4.1)
@@ -155,6 +162,7 @@ DEPENDENCIES
   devise
   jquery-rails
   minitest
+  paperclip (~> 3.0)
   pg
   rails (= 3.2.2)
   sass-rails (~> 3.2.3)

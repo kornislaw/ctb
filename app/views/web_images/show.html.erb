@@ -1,0 +1,9 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <%= image_tag @web_image.image.url(:large) %>
+</p>
+
+
+<%= link_to 'Edit', edit_web_image_path(@web_image) %> |
+<%= link_to 'Back', web_images_path %>
